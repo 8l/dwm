@@ -1,0 +1,18 @@
+.Xresources
+XTerm*faceName: Bitstream Vera Sans Mono
+XTerm*faceSize: 9
+XTerm*background: rgb:00/33/55
+XTerm*foreground: gray
+XTerm*saveLines: 2000
+
+.xinitrc
+#exec openbox-session
+xrdb -merge .Xresources
+wmname LG3D
+exec dwm
+
+git clone http://git.suckless.org/dmenu
+make
+sudo cp dmenu /usr/bin
+sudo cp dmenu_run /usr/bin
+sudo cp stest /usr/bin
