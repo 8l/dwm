@@ -12,7 +12,8 @@ wmname LG3D
 exec dwm
 
 git clone http://git.suckless.org/dmenu
+cd dmenu
+vi config.mk //PREFIX = /usr
 make
-sudo cp dmenu /usr/bin
-sudo cp dmenu_run /usr/bin
-sudo cp stest /usr/bin
+sudo make install
+
